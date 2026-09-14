@@ -1,0 +1,70 @@
+MAPREDUCE VS PIG COMPARISON
+
+1. Top Song
+
+MapReduce MR1 and Pig1 both identify:
+Unholy (feat. Kim Petras)
+
+Popularity:
+100
+
+Result:
+Both approaches produce the same top song.
+
+
+2. Top Artists
+
+MapReduce MR3 and Pig2 produce the same Top 10 artists.
+
+Top artist:
+Bizarrap - 1 track - 99.00 average popularity
+
+Result:
+Both approaches produce identical Top 10 artist rankings and statistics.
+
+
+3. Genre Statistics
+
+MapReduce MR2 and Pig3 calculate:
+- Minimum popularity
+- Maximum popularity
+- Average popularity
+- Number of tracks
+
+The results are equivalent.
+
+Example:
+acoustic
+
+MR2:
+Minimum = 0
+Maximum = 82
+Average = 42.48
+Tracks = 1000
+
+Pig3:
+Tracks = 1000
+Average = 42.483
+Maximum = 82
+Minimum = 0
+
+Result:
+The values are equivalent; only column order and decimal precision differ.
+
+
+4. Additional Pig Analyses
+
+Pig4:
+Top 10 genres by average popularity.
+
+Pig5:
+Comparison of explicit and non-explicit tracks using:
+- Number of tracks
+- Average popularity
+- Maximum popularity
+- Minimum popularity
+
+
+Overall Conclusion
+
+MapReduce and Pig produced consistent results for the analyses that were implemented using both technologies. Pig additionally provided convenient scripts for genre ranking and explicit-content analysis.
